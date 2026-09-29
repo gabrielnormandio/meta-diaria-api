@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -39,5 +40,8 @@ public class Usuario {
     @PrePersist
     public void prePersist() {
         this.criadoEm = LocalDateTime.now();
+    }
+
+    public void setHorarioNotificacao(LocalTime horarioNotificacao) {
     }
 }
